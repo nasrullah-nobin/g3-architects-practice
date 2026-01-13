@@ -107,28 +107,83 @@ header {
 #quick-list {
     font-weight: 600;
 }
-.feature-description {
+.feature-description,
+.benefits-description {
     line-height: 26px;
     font-size: 1rem;
     margin-top: 24px;
     margin-bottom: 30px;
 }
+/* our-benefits related style */
+.our-benefits {
+    gap: 146px;
+    /* justify-items: center; */
+    align-items: center;
+}
+.left-border {
+    border-left: 4px solid #FF900E;
+    padding-left: 20px;
+}
+.benefits-box {
+    width: 586px;
+    padding: 30px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+.benefit-header {
+    margin-bottom: 10px;
+}
+.architect-image img {
+    width: 100%;
+}
 
+/* some fact related style  */
+.fact-box {
+    justify-content: center;
+    gap: 124px;
+    text-align: center;
+}
+.fact-card {
+    width: 241px;
+    padding: 45px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+}
+.fact-descripton,
+.sponsors-description {
+    margin: 24px 0 100px;
+}
+/* sponsors-related-style */
+.sponsors-company {
+    justify-content: center;
+    gap: 130px;
+}
+.sponsors-company img {
+    filter: grayscale(100%);
+}
 /* responsive for small device */
 @media screen and (max-width: 576px) {
-    .nav-bar {
+    .nav-bar,
+    .our-benefits {
         flex-direction: column;
         margin-bottom: 30px;
+    }
+    .our-benefits {
+        gap: 0;
+        margin: 20px auto;
+        text-align: center;
     }
     .nav-menu {
         margin-top: 20px;
     }
     .brand-title,
     .section-title {
-        font-size: 2rem;
+        font-size: 2.8rem;
     }
     .nav-menu {
-        gap: 15px;
+        gap: 40px;
         padding: 10px;
     }
     .our-feature {
@@ -147,7 +202,8 @@ header {
 
 /* responsive for tablet device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .nav-bar {
+    .nav-bar,
+    .our-benefits {
         flex-direction: column;
         margin-bottom: 30px;
     }
@@ -155,15 +211,28 @@ header {
         margin-top: 20px;
     }
      .our-feature {
+        width: 95%;
         flex-direction: column;
         margin: 0;
     }
-    .feature-image {
+    .feature-image,
+    .architect-image {
+        width: 95%;
         gap: 20px;
     }
     .feature-content {
+        max-width: 95%;
         margin: 20px 0 0;
         padding: 10px;
         text-align: center;
+    }
+    .our-benefits {
+        max-width: 100%;
+        gap: 0;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .benefits-box  {
+        max-width: 100%;
     }
 }
