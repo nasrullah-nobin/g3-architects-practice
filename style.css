@@ -140,6 +140,10 @@ header {
 }
 
 /* some fact related style  */
+ .some-facts {
+    max-width: 1440px;
+    margin: 0 auto;
+    }
 .fact-box {
     justify-content: center;
     gap: 124px;
@@ -151,7 +155,7 @@ header {
     border-radius: 8px;
     border: 1px solid #FF900E;
 }
-.fact-descripton,
+.fact-description,
 .sponsors-description {
     margin: 24px 0 100px;
 }
@@ -163,10 +167,26 @@ header {
 .sponsors-company img {
     filter: grayscale(100%);
 }
+
+footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin: 130px 240px 216px;
+    text-align: center;
+}
+.footer-content {
+    background-color: #FFF4E7;
+    font-size: 1rem;
+    padding: 38px;
+    border-radius: 8px;
+    border: none;
+}
 /* responsive for small device */
 @media screen and (max-width: 576px) {
     .nav-bar,
-    .our-benefits {
+    .our-benefits,
+    .fact-box,
+    .sponsors-company {
         flex-direction: column;
         margin-bottom: 30px;
     }
@@ -198,6 +218,33 @@ header {
         padding: 10px;
         text-align: center;
     }
+     .fact-box,
+    .sponsors-company {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        /* flex-direction: column; */
+        gap: 20px;
+    }
+   .some-facts,
+   .fact-card,
+   .sponsors {
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+    }
+    .sponsors-company img {
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+    }
+    footer {
+        width: 100%;
+        margin: 100px auto;
+    }
+    .footer-content {
+        margin: 30px;
+        padding: 20px;
+    }
 }
 
 /* responsive for tablet device */
@@ -222,17 +269,44 @@ header {
     }
     .feature-content {
         max-width: 95%;
-        margin: 20px 0 0;
+        margin: 20px auto 0;
         padding: 10px;
         text-align: center;
     }
     .our-benefits {
-        max-width: 100%;
+        max-width: 95%;
         gap: 0;
         margin: 20px auto;
         text-align: center;
     }
     .benefits-box  {
-        max-width: 100%;
+        max-width: 95%;
+    }
+    .fact-box,
+    .sponsors-company {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        /* flex-direction: column; */
+        gap: 30px;
+    }
+    .some-facts,
+   .fact-card,
+   .sponsors {
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+    }
+    .sponsors-company img {
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+    }
+     footer {
+        width: 100%;
+        margin: 100px auto;
+    }
+    .footer-content {
+        margin: 30px;
+        padding: 20px;
     }
 }
