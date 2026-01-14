@@ -43,6 +43,12 @@ main> section {
     border-radius: 8px;
     padding: 20px 25px;
     border: none;
+    transition: 0.3s;
+}
+.btn-primary:hover {
+    background-color: white;
+    color: #FF900E;
+    border: 1px solid #FF900E;
 }
 /* nav related style  */
 .nav-bar {
@@ -58,6 +64,12 @@ main> section {
 }
 .nav-link {
     text-decoration: none;
+    transition: 0.3s;
+}
+.nav-link:hover {
+    color: #FF900E;
+    padding: 10px 20px;
+    border: 1px solid #FF900E;
 }
 .brand-section {
     max-width: 1440px;
@@ -99,6 +111,10 @@ header {
 }
 .feature-image img {
     width: 100%;
+    transition: transform .2s;
+}
+.feature-image img:hover {
+    transform: scale(1.8);
 }
 .feature-content {
     max-width: 530px;
@@ -131,6 +147,12 @@ header {
     border: none;
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
     margin-bottom: 20px;
+    transition: 0.3s;
+}
+.benefits-box:hover {
+    border: 1px solid #FF900E;
+    color: #FF900E;
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.334);
 }
 .benefit-header {
     margin-bottom: 10px;
@@ -154,6 +176,11 @@ header {
     padding: 45px;
     border-radius: 8px;
     border: 1px solid #FF900E;
+    transition: 0.3s;
+}
+.fact-card:hover {
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.334);
+    color: #FF900E;
 }
 .fact-description,
 .sponsors-description {
@@ -165,6 +192,7 @@ header {
     gap: 130px;
 }
 .sponsors-company img {
+    cursor: pointer;
     filter: grayscale(100%);
 }
 
