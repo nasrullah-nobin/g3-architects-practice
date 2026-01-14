@@ -37,6 +37,7 @@ main> section {
     display: flex;
 }
 .btn-primary {
+    /* overflow: hidden; */
     background-color: #FF900E;
     font-size: 1.2rem;
     color: white;
@@ -49,6 +50,9 @@ main> section {
     background-color: white;
     color: #FF900E;
     border: 1px solid #FF900E;
+}
+.btn-primary:focus {
+    outline: 3px solid rgba(255,144,14,0.5);
 }
 /* nav related style  */
 .nav-bar {
@@ -105,13 +109,14 @@ header {
     align-items: center;
 }
 .feature-image {
+    /* overflow: hidden; */
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 24px;
 }
 .feature-image img {
     width: 100%;
-    transition: transform .2s;
+    transition: transform 1.05s ease;
 }
 .feature-image img:hover {
     transform: scale(1.8);
@@ -199,7 +204,8 @@ header {
 footer {
     max-width: 1440px;
     margin: 0 auto;
-    margin: 130px 240px 216px;
+    padding: 80px 20px;
+    /* margin: 130px 240px 216px; */
     text-align: center;
 }
 .footer-content {
@@ -211,6 +217,14 @@ footer {
 }
 /* responsive for small device */
 @media screen and (max-width: 576px) {
+    header,
+    .nav-bar,
+    .our-benefits,
+    .fact-box,
+    .sponsors-company,
+    .benefits-box {
+        width: 100%;
+    }
     .nav-bar,
     .our-benefits,
     .fact-box,
@@ -256,7 +270,7 @@ footer {
    .some-facts,
    .fact-card,
    .sponsors {
-    width: 95%;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
     }
